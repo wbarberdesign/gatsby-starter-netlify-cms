@@ -6,6 +6,19 @@ import Layout from '../components/Layout'
 import Features from '../components/Features'
 import BlogRoll from '../components/BlogRoll'
 
+class CustomNav extends React.Component(){
+  constructor(props){
+    super();
+  }
+  render(){
+    var name = this.props.name;
+    return(
+      <div>
+        <p>{name}</p>
+      </div>
+    )
+  }
+}
 export const NewPageTemplate = ({
   image,
   title,
@@ -16,6 +29,7 @@ export const NewPageTemplate = ({
   intro,
 }) => (
   <div>
+  <CustomNav name ="custom"/>
     <div
       className="full-width-image margin-top-0"
       style={{
