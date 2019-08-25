@@ -156,7 +156,7 @@ export default NewPage
 
 export const pageQuery = graphql`
   query NewPageTemplate {
-    markdownRemark(frontmatter: { templateKey: { eq: "New-page" } }) {
+    markdownRemark(frontmatter: { templateKey: { eq: "new-page" } }) {
       frontmatter {
         title
         image {
